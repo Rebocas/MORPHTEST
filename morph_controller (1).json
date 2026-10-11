@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["IEI", "RDR", "III"],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "E": { "item": "minecraft:ender_eye" },
+    "R": { "item": "minecraft:redstone" },
+    "D": { "item": "minecraft:diamond" }
+  },
+  "result": { "item": "morphmod:morph_controller" }
+}

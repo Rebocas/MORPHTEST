@@ -1,0 +1,23 @@
+{
+  "item.morphmod.morph_controller": "Morph Controller",
+  "item.morphmod.morph_controller.desc1": "Right click: opens the morph console.",
+  "item.morphmod.morph_controller.desc2": "Become any mob, entity or block!",
+  "itemGroup.morphmod": "Morph Controller",
+  "key.categories.morphmod": "Morph Controller",
+  "key.morphmod.ability": "Morph ability",
+  "key.morphmod.console": "Open morph console",
+  "gui.morphmod.title": "MORPH CONSOLE",
+  "gui.morphmod.tab.mobs": "Mobs",
+  "gui.morphmod.tab.entities": "Entities",
+  "gui.morphmod.tab.blocks": "Blocks",
+  "gui.morphmod.search": "Search...",
+  "gui.morphmod.transform": "Transform",
+  "gui.morphmod.reset": "Reset",
+  "gui.morphmod.size": "Size: %s",
+  "gui.morphmod.selected": "Selected: %s",
+  "gui.morphmod.none_selected": "Selected: none (double click to transform)",
+  "gui.morphmod.current": "Current form: %s",
+  "gui.morphmod.original": "original",
+  "message.morphmod.no_controller": "You need the Morph Controller in your inventory.",
+  "message.morphmod.cooldown": "Ability recharging..."
+}

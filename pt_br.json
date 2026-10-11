@@ -1,0 +1,23 @@
+{
+  "item.morphmod.morph_controller": "Controle de Morph",
+  "item.morphmod.morph_controller.desc1": "Botao direito: abre o console de morph.",
+  "item.morphmod.morph_controller.desc2": "Vire qualquer mob, entidade ou bloco!",
+  "itemGroup.morphmod": "Morph Controller",
+  "key.categories.morphmod": "Morph Controller",
+  "key.morphmod.ability": "Habilidade do morph",
+  "key.morphmod.console": "Abrir console de morph",
+  "gui.morphmod.title": "CONSOLE DE MORPH",
+  "gui.morphmod.tab.mobs": "Mobs",
+  "gui.morphmod.tab.entities": "Entidades",
+  "gui.morphmod.tab.blocks": "Blocos",
+  "gui.morphmod.search": "Buscar...",
+  "gui.morphmod.transform": "Transformar",
+  "gui.morphmod.reset": "Resetar",
+  "gui.morphmod.size": "Tamanho: %s",
+  "gui.morphmod.selected": "Selecionado: %s",
+  "gui.morphmod.none_selected": "Selecionado: nenhum (clique duas vezes para transformar)",
+  "gui.morphmod.current": "Forma atual: %s",
+  "gui.morphmod.original": "original",
+  "message.morphmod.no_controller": "Voce precisa do Controle de Morph no inventario.",
+  "message.morphmod.cooldown": "Habilidade recarregando..."
+}
