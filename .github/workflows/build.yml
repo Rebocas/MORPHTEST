@@ -19,23 +19,26 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      # Instala o Gradle 8.1.1 direto, sem precisar do gradlew/gradle-wrapper.jar.
       - uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: '8.1.1'
 
+      - name: Extrair o projeto
+        run: |
+          unzip -q ./*.zip
+          ls morphmod
+          find morphmod -name "*.java" | head -30
+
       - name: Compilar
+        working-directory: morphmod
         run: gradle build --no-daemon --stacktrace
+
+      - name: Conteudo do jar
+        run: |
+          for f in morphmod/build/libs/*.jar; do unzip -l "$f" | head -40; done
 
       - name: Enviar o .jar
         uses: actions/upload-artifact@v4
         with:
           name: morphmod-jar
-          path: build/libs/*.jar
-
-      # Ao criar uma tag (ex.: v1.0.0), publica o .jar numa Release.
-      - name: Publicar Release
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
-        with:
-          files: build/libs/*.jar
+          path: morphmod/build/libs/*.jar
