@@ -23,7 +23,14 @@ jobs:
       - uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: '8.1.1'
-
+      - name: Diagnostico
+      run: |
+        echo "=== arquivos .java ==="
+        find . -name "*.java" | head -50
+        echo "=== mods.toml ==="
+        find . -name "mods.toml"
+        echo "=== build.gradle ==="
+        cat build.gradle
       - name: Compilar
         run: gradle build --no-daemon --stacktrace
 
